@@ -37,3 +37,106 @@ ul {
 svg {
   fill: var(--clr-one);
 }
+
+/* navigation */
+
+header {
+  width: 100vw;
+  height: 70px;
+  background: var(--clr-two);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  margin-left: 50px;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  margin: 0;
+}
+
+nav {
+  margin-right: 50px;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  font-size: 17px;
+  padding: 20px;
+}
+
+nav ul li a {
+  color: var(--text-clr);
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+nav ul li a:hover {
+  color: var(--clr-one);
+}
+
+.menu-icons {
+  display: none;
+}
+
+.current {
+  color: var(--clr-one);
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .menu-icons {
+    display: block;
+  }
+
+  .menu-icons svg {
+    fill: var(--clr-three);
+    cursor: pointer;
+  }
+
+  .close svg {
+    fill: var(--clr-one);
+  }
+
+  .nav-list {
+    width: 50vw;
+    height: 100vh;
+    background-color: var(--clr-three);
+    position: fixed;
+    top: 0;
+    right: -50vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    z-index: 10000000;
+    transition: all 0.65s ease-in-out;
+  }
+
+  .nav-list.active {
+    right: 0;
+  }
+
+  .close {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+  }
+
+  nav ul li a {
+    color: var(--clr-two);
+  }
+}
