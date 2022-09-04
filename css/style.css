@@ -435,3 +435,144 @@ footer .footer-container p {
 footer p span {
   color: var(--clr-one);
 }
+
+/* about */
+/* about section */
+
+#showcase {
+  min-height: 450px;
+  text-align: center;
+}
+
+#showcase .bg-image {
+  position: absolute;
+  background: var(--clr-two) url(../images/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+#showcase .content-wrap {
+  padding: 0 1.5em;
+}
+
+#section-a {
+  background: var(--clr-four);
+  padding: 100px 30px 0;
+  text-align: center;
+}
+#section-a h2 {
+  display: inline-block;
+  font-size: 40px;
+  margin-bottom: 50px;
+  border-bottom: 4px solid var(--clr-one);
+  padding-bottom: 10px;
+}
+
+.about-desc {
+  width: 100%;
+  min-height: 150px;
+}
+
+.about-desc h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: var(--clr-three);
+}
+
+.about-desc p {
+  margin-bottom: 20px;
+}
+
+#section-a .logo-box {
+  padding-bottom: 50px;
+}
+
+/* services section */
+
+#section-b {
+  padding: 100px 20px 20px;
+  text-align: center;
+  background: var(--clr-three);
+  width: 100%;
+}
+
+#section-b.sec2::before,
+#section-b.sec2::after {
+  background: var(--clr-three);
+}
+
+#section-b h2 {
+  display: inline-block;
+  font-size: 40px;
+  margin-bottom: 50px;
+  border-bottom: 4px solid var(--clr-one);
+  padding-bottom: 10px;
+}
+
+#section-b li {
+  margin-bottom: 15px;
+  background: var(--clr-two);
+}
+
+#section-b li img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3,
+.card-content p {
+  padding: 15px 0;
+}
+
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(1, minmax(auto, 50em)) 1fr;
+  }
+
+  #section-a {
+    padding: 110px 30px 0;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-desc {
+    width: 350px;
+  }
+
+  #section-b {
+    padding: 110px 20px 20px;
+  }
+
+  .content-wrap,
+  #section-b ul {
+    grid-column: 2/3;
+  }
+
+  #section-b .sec2 {
+    display: grid;
+    grid-template-columns: 1fr repeat(1, minmax(auto, 100em)) 1fr;
+  }
+
+  #section-b ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #section-b li {
+    width: 31%;
+  }
+}
