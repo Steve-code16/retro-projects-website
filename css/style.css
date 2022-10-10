@@ -588,3 +588,139 @@ footer p span {
 .text-container .right {
   width: 45%;
 }
+
+/* contact */
+
+.box svg {
+  width: 40px;
+  height: 40px;
+  fill: var(--clr-three);
+  background: #222;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: background 0.4s;
+}
+
+.touch-con .box:hover svg {
+  background: var(--clr-one);
+}
+
+.container-b {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container-b h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.container-b .contact-wraper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-wraper h2 {
+  text-transform: capitalize;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.contact-wraper h2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  height: 5px;
+  width: 50px;
+  background: var(--clr-one);
+}
+
+.contact-wraper .form-con {
+  width: 60%;
+}
+
+.input-box input,
+.input-box textarea {
+  width: 100%;
+  padding: 10px 0 10px 10px;
+  margin-bottom: 10px;
+  color: #fefefe;
+  border: 2px solid #444;
+  outline: none;
+  background: var(--clr-two);
+  font-family: arial, sans-serif;
+}
+
+.input-box textarea {
+  padding: 10px 0 80px 10px;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  background: transparent;
+  border: 2px solid #444;
+  outline: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #fefefe;
+  text-transform: uppercase;
+  margin: 30px 0 50px;
+  font-weight: bold;
+  transition: 0.4s;
+  font-family: arial, sans-serif;
+}
+
+input[type="submit"]:hover {
+  background: var(--clr-one);
+  border: 2px solid transparent;
+}
+
+.contact-wraper .touch-con {
+  width: 35%;
+  min-width: 300px;
+}
+
+.touch-con .box {
+  border: 2px solid #444;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-wraper .form-con {
+    width: 100%;
+  }
+
+  .contact-wraper .touch-con {
+    width: 100%;
+  }
+
+  /*.touch-con .box{
+  flex-direction: column;
+}*/
+}
+
+.screen-wipe-top {
+  width: 100%;
+  height: 100vh;
+  background: var(--clr-one);
+  position: fixed;
+  z-index: 1000;
+  top: -100%;
+}
+
+.screen-wipe-bottom {
+  width: 100%;
+  height: 100vh;
+  background: var(--clr-one);
+  position: fixed;
+  z-index: 1000;
+  bottom: -100%;
+}
