@@ -446,7 +446,8 @@ footer p span {
 
 #showcase .bg-image {
   position: absolute;
-  background: var(--clr-two) url(../images/banner.jpg);
+  background: var(--clr-two)
+    url(https://storage.googleapis.com/afs-prod/media/afs:Medium:6906200015/775.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
