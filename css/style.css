@@ -576,3 +576,15 @@ footer p span {
     width: 31%;
   }
 }
+
+.text-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-container .left,
+.text-container .right {
+  width: 45%;
+}
